@@ -11,6 +11,7 @@ function popUpRandomMole() {
     }
 
     const moleHeads = document.querySelectorAll(".wgs__mole-head:not(.wgs__mole-head--whacked)");
+    console.log(moleHeads);
     if (moleHeads.length === 0) {
         return;
     }
@@ -53,7 +54,7 @@ window.addEventListener("DOMContentLoaded", () => {
             event.target.classList.add("wgs__mole-head--hidden");
 
             // UNCOMMENT THIS LINE OF CODE WHEN DIRECTED FOR THE BONUS
-            // event.target.classList.add("wgs__mole-head--whacked");
+            event.target.classList.add("wgs__mole-head--whacked");
         });
     }
 });
